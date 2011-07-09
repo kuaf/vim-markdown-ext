@@ -1,0 +1,61 @@
+
+Markdown Extension For Vim
+==========================
+
+I really like the life in plain-text world where Markdown is my best friend.
+Vim 7.3 itself support Markdown file type which is implemented by [Tim
+Pope][Tim Pope's markdown], an absolute man in Vim community. Also, I see [Mike
+West][Mike West's markdown] did good notation and improvement based on Tim
+Pope's markdown. However, the current work has missed other important features
+like syntax fold, table operation, etc. Besides, a few of syntax highlight
+issues are found in Vim. I want to work out them, not sure when I could
+complete them.
+
+[Tim Pope's markdown]: https://github.com/tpope/vim-markdown
+[Mike West's markdown]: https://github.com/mikewest/vim-markdown
+
+Feature
+-------
+
+So far, I only need two features:
+
+*   heading syntax fold
+*   list syntax fold
+*   table & table operation
+
+More features will be added into above list.
+
+### heading syntax fold
+
+Two kinds of heading layout is preferred as following:
+
+>       H1
+>       ==                  # H1
+> 
+>       H2
+>       --                  ## H2
+> 
+>       ### H3              ### H3
+> 
+>       #### H4             #### H4
+> 
+>       ##### H5            ##### H5
+> 
+>       ###### H6           ###### H6
+
+I don't think it's good practice mixing two kinds of style for H1 and H2. Keep
+concise and simple, above heading layout is strongly recommended.
+
+### list syntax fold
+
+TBD
+
+### table & table operation
+
+TBD
+
+
+
+
+
+
