@@ -185,7 +185,7 @@ syn region markdownCode matchgroup=markdownCodeDelimiter start="`` \=" end=" \=`
 syn match markdownEscape "\\[][\\`*_{}()#+.!-]"
 
 "
-" Fold:
+" Heading Fold:
 "
 "     H1
 "     ==                  # H1
@@ -205,6 +205,8 @@ syntax region markdownH1Fold start=".\+\n=\+$" end="\ze.\+\n=\+$" transparent fo
 syntax region markdownH2Fold start=".\+\n-\+$" end="\ze.\+\n-\+$" transparent fold keepend
 syntax region markdownHeadingFold start="^\z(#\+\)" end="\(^#\(\z1#*\)\@!#*[^#]\)\@=" transparent fold keepend
 
+syn sync fromstart
+setlocal foldmethod=syntax
 
 hi def link markdownH1                    htmlH1
 hi def link markdownH2                    htmlH2
